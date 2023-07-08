@@ -12,6 +12,11 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
+        test(1, null)
         assertEquals(4, 2 + 2)
+    }
+
+    fun test(param1: Int, param2: String?): String{
+        return "Stuff $param1 $param2"
     }
 }
